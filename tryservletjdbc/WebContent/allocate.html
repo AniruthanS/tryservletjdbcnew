@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+  </style>
+    <link rel="stylesheet" href="./aniruth.css">
+<script>
+function nameCheck() {
+    let name = document.getElementById("name").value;
+    const alphabeticRegex = /^[a-zA-Z]+$/;
+  if (alphabeticRegex.test(name)){
+        document.getElementById("reName").innerHTML = " ";
+    }
+    else{
+        document.getElementById("reName").innerHTML = "Enter alphabets";
+    }
+
+    const inputField = document.getElementById("name");
+
+inputField.addEventListener("input", () => {
+  if (/[^a-zA-Z]/.test(inputField.value)) {
+    inputField.value = inputField.value.replace(/[^a-zA-Z]/g, "");
+  }
+  if (inputField.value.length > 20) {
+    inputField.value = inputField.value.slice(0, 20);
+  }
+});
+
+inputField.addEventListener("paste", (event) => {
+  const clipboardText = event.clipboardData.getData("text/plain");
+  if (/[^a-zA-Z]/.test(clipboardText) || clipboardText.length > 20) {
+    event.preventDefault();
+    const filteredText = clipboardText.replace(/[^a-zA-Z]/g, "").slice(0, 20);
+    document.execCommand("insertText", false, filteredText);
+  }
+});
+
+inputField.addEventListener("keydown", (event) => {
+  if (inputField.value.length >= 20 && event.keyCode !== 8) {
+    event.preventDefault();
+  }
+  if (/[^a-zA-Z]/.test(event.key)) {
+    event.preventDefault();
+  }
+});
+}
+function mobCheck() {
+    let number = document.getElementById("mobile").value;
+    if (!isNaN(number) && number.toString().length === 10){
+        document.getElementById("remob").innerHTML = " ";
+    }else{
+        document.getElementById("remob").innerHTML = "invalid mobile number";
+    }
+}
+function jobcheck() {
+    let name = document.getElementById("job").value;
+    const alphabeticRegex = /^[a-zA-Z]+$/;
+  if (alphabeticRegex.test(name)){
+        document.getElementById("rejob").innerHTML = " ";
+    }
+    else{
+        document.getElementById("rejob").innerHTML = "Enter alphabets";
+    }
+
+    const inputField = document.getElementById("job");
+
+inputField.addEventListener("input", () => {
+  if (/[^a-zA-Z]/.test(inputField.value)) {
+    inputField.value = inputField.value.replace(/[^a-zA-Z]/g, "");
+  }
+  if (inputField.value.length > 20) {
+    inputField.value = inputField.value.slice(0, 20);
+  }
+});
+
+inputField.addEventListener("paste", (event) => {
+  const clipboardText = event.clipboardData.getData("text/plain");
+  if (/[^a-zA-Z]/.test(clipboardText) || clipboardText.length > 20) {
+    event.preventDefault();
+    const filteredText = clipboardText.replace(/[^a-zA-Z]/g, "").slice(0, 20);
+    document.execCommand("insertText", false, filteredText);
+  }
+});
+
+inputField.addEventListener("keydown", (event) => {
+  if (inputField.value.length >= 20 && event.keyCode !== 8) {
+    event.preventDefault();
+  }
+  if (/[^a-zA-Z]/.test(event.key)) {
+    event.preventDefault();
+  }
+});
+}
+
+function fjobcheck() {
+    let name = document.getElementById("fjob").value;
+    const alphabeticRegex = /^[a-zA-Z]+$/;
+  if (alphabeticRegex.test(name)){
+        document.getElementById("refjob").innerHTML = " ";
+    }
+    else{
+        document.getElementById("refjob").innerHTML = "Enter alphabets";
+    }
+
+    const inputField = document.getElementById("fjob");
+
+inputField.addEventListener("input", () => {
+  if (/[^a-zA-Z]/.test(inputField.value)) {
+    inputField.value = inputField.value.replace(/[^a-zA-Z]/g, "");
+  }
+  if (inputField.value.length > 20) {
+    inputField.value = inputField.value.slice(0, 20);
+  }
+});
+
+inputField.addEventListener("paste", (event) => {
+  const clipboardText = event.clipboardData.getData("text/plain");
+  if (/[^a-zA-Z]/.test(clipboardText) || clipboardText.length > 20) {
+    event.preventDefault();
+    const filteredText = clipboardText.replace(/[^a-zA-Z]/g, "").slice(0, 20);
+    document.execCommand("insertText", false, filteredText);
+  }
+});
+
+inputField.addEventListener("keydown", (event) => {
+  if (inputField.value.length >= 20 && event.keyCode !== 8) {
+    event.preventDefault();
+  }
+  if (/[^a-zA-Z]/.test(event.key)) {
+    event.preventDefault();
+  }
+});
+}
+
+function nativecheck() {
+    let name = document.getElementById("native").value;
+    const alphabeticRegex = /^[a-zA-Z]+$/;
+  if (alphabeticRegex.test(name)){
+        document.getElementById("renative").innerHTML = " ";
+    }
+    else{
+        document.getElementById("renative").innerHTML = "Enter alphabets";
+    }
+
+    const inputField = document.getElementById("native");
+
+inputField.addEventListener("input", () => {
+  if (/[^a-zA-Z]/.test(inputField.value)) {
+    inputField.value = inputField.value.replace(/[^a-zA-Z]/g, "");
+  }
+  if (inputField.value.length > 20) {
+    inputField.value = inputField.value.slice(0, 20);
+  }
+});
+
+inputField.addEventListener("paste", (event) => {
+  const clipboardText = event.clipboardData.getData("text/plain");
+  if (/[^a-zA-Z]/.test(clipboardText) || clipboardText.length > 20) {
+    event.preventDefault();
+    const filteredText = clipboardText.replace(/[^a-zA-Z]/g, "").slice(0, 20);
+    document.execCommand("insertText", false, filteredText);
+  }
+});
+
+inputField.addEventListener("keydown", (event) => {
+  if (inputField.value.length >= 20 && event.keyCode !== 8) {
+    event.preventDefault();
+  }
+  if (/[^a-zA-Z]/.test(event.key)) {
+    event.preventDefault();
+  }
+});
+}
+
+function monthscheck() {
+const inputField = document.getElementById("months");
+
+inputField.addEventListener("input", () => {
+  const userInput = parseInt(inputField.value);
+  if (isNaN(userInput) || userInput < 10 || userInput > 99) {
+    document.getElementById("remonths").innerHTML = "Enter  valid number";
+    }
+    else{
+        document.getElementById("remonths").innerHTML = " ";
+    }
+});
+}
+
+function agecheck() {
+    const inputField = document.getElementById("age");
+    
+    inputField.addEventListener("input", () => {
+      const userInput = parseInt(inputField.value);
+      if (isNaN(userInput) || userInput < 10 || userInput > 99) {
+        document.getElementById("reage").innerHTML = "Enter valid number";
+    }
+    else{
+        document.getElementById("reage").innerHTML = " ";
+    }
+    });
+    }
+
+function rentcheck(){
+    const inputField = document.getElementById("rent");
+    const pattern = /^\d{0,5}$/;
+    
+    inputField.addEventListener("input", () => {
+      const userInput = inputField.value;
+      if (!pattern.test(userInput)) {
+        document.getElementById("rerent").innerHTML = "Enter valid rent 5 digit";
+    }
+    else{
+        document.getElementById("rerent").innerHTML = " ";
+    }
+    });}
+
+    function advancecheck(){
+        const inputField = document.getElementById("advance");
+        const pattern = /^\d{0,5}$/;
+        
+        inputField.addEventListener("input", () => {
+          const userInput = inputField.value;
+          if (!pattern.test(userInput)) {
+            document.getElementById("readvance").innerHTML = "Enter valid rent 5 digit";
+        }
+        else{
+            document.getElementById("readvance").innerHTML = " ";
+        }
+        });}
+  
+</script>
+ <script>
+//Get all <p> tags and the submit button
+
+	function submitForm(event) {
+		var paragraphs = document.querySelectorAll("p");
+		
+	var name = document.getElementById("name").value;
+	var job = document.getElementById("job").value;
+	var fjob = document.getElementById("fjob").value;
+	var mobile = document.getElementById("mobile").value;
+	var native = document.getElementById("native").value;
+	var months = document.getElementById("months").value;
+	var age = document.getElementById("age").value;
+	var rent = document.getElementById("rent").value;
+	var advance = document.getElementById("advance").value;
+	var errorMsg = document.getElementById("errorMsg");
+	errorMsg.innerHTML = "";
+	// loop through each p element
+	for (var i = 0; i < paragraphs.length; i++) {
+		// check if the current p element is empty
+		if (paragraphs[i].textContent.trim() === "") {
+			// if the p element is empty, submit the form
+			l=0;
+		}
+		else{
+			l=1;
+			break;
+		}
+		
+	}
+	if(name === "" || job === "" || fjob === ""||mobile === "" || native === "" || months === ""||age === "" || rent === "" || advance === "") {
+		event.preventDefault();
+		errorMsg.innerHTML = "Please fill out all fields";
+	} 
+	if(l===1){
+		event.preventDefault();
+		errorMsg.innerHTML = "enter details as specified";
+	}
+}
+	
+
+	
+	function cotallowAlphanumeric() {
+		var input = document.getElementById("cotno");
+		input.value = input.value.replace(/[^a-zA-Z0-9]/g, '');
+	}
+	function roomallowAlphanumeric() {
+		var input = document.getElementById("room");
+		input.value = input.value.replace(/[^a-zA-Z0-9]/g, '');
+	}
+  </script>
+</head>
+<body>
+    <form id= "myForm" action="./allocServlet" method="post">
+    <div class="main">
+        <input type="text" name="name" placeholder="Name only alphabet 25char" class="user" id="name" oninput="nameCheck()"><p id="reName"></p>
+        <input type="text" name="job" placeholder="Desig only alphabet 25char" class="user" id="job" oninput="jobcheck()"><br><p id="rejob"></p>
+        <input type="text" name="field" placeholder="deptOfJob only alphabet 25char" class="user" id="fjob" oninput="fjobcheck()"><p id="refjob"></p>
+        <input type="number" name="mobile" placeholder="Mobile Number 10 nos" class="user" id="mobile" oninput="mobCheck()"><p id="remob"></p>
+        <input maxlength="20" type="text" name="place" placeholder="Native only alphabet 25char" id="native" class="user" oninput="nativecheck()"><p id="renative"></p>
+        <input maxlength="2" type="text" name="stayperiod" placeholder="no of months of stay" class="user" id="months" oninput="monthscheck()"><br><p id="remonths"></p>
+        <input maxlength="2" type="number" name="age" placeholder="Age in no" class="user" id="age" oninput="agecheck()"><p id="reage"></p>
+        <input maxlength="6" type="number" name="rent" placeholder="Rent in no <=5digits" class="user"id="rent" oninput="rentcheck()"><p id="rerent"></p>
+        <input maxlength="6" type="number" name="advance" placeholder="Advance in no" class="user"id="advance" oninput="advancecheck()"><p id="readvance"></p>
+        <input maxlength="10" type="text" name="cotno" placeholder="Cot NO" class="user" id="cotno" oninput="cotallowAlphanumeric()"><br>
+        <input maxlength="10" type="text" name="room" placeholder="Room NO" class="user" id="room" oninput="roomallowAlphanumeric()"><br>
+        <p id="errorMsg"></p>
+        <button id="submitBtn" onclick="submitForm(event)">Submit</button>
+        <!-- <script src="./aniruth.js"></script> -->
+
+    </div>
+    </form>
+</body>
+</html>
